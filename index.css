@@ -9,7 +9,7 @@ html{
 }
 section{
     width: 100%;
-    height: 10px;
+    height: 100vh;
 }
 
 section nav{
@@ -23,6 +23,11 @@ section nav{
     background-color: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     z-index:1000;
+}
+section .logo img{
+   
+    height: 90px;
+    overflow: hidden;
 }
 section nav ul{
     list-style: none;
@@ -63,9 +68,7 @@ section nav .icon i{
     transition: 0.3s;
 }
 section nav .icon i:hover{
-    backdrop-filter: 0px 50px 40px 3px gold;
     color: #fac301;
-
 }
 section .main{
     display:flex;
@@ -77,8 +80,8 @@ section .main{
 section .main .main_text{
     font-size: 38px;
     position: relative;
-    left:10px;
-    top:-100px
+    left:30px;
+    top:-150px
 }
 section .main .main_text h1 span{
     color: #fac301;
@@ -89,16 +92,154 @@ section .main .main_text h1 span{
 section .main .main_img{
     position: relative;
     top: 10px;
-  left: 1px;
+  left: 50px;
 }
 section p{
     position: relative;
     text-align: justify;
     width:700px;
-    left: 60px;
+    left: 80px;
     bottom: 10px;
     line-height: 30px;
-    
-    top:-100px;
+    top:-150px;
 
 }
+section .ord_button{
+    background-color: #fac301;
+    position: relative;
+    left: 80px;
+    bottom: 90px;
+    width: 150px;
+    cursor:pointer;
+    padding: 12px 25px;
+
+}
+section .ord_button a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+section .ord_button i{
+    color: white;
+    transition: 0.3s;
+}
+section .ord_button:hover i{
+    transform: translatex(8px);
+}
+
+/*MENU*/
+.menu{
+    width: 100%;
+    padding: 70px 0 ;
+}
+.menu h1{
+    
+   display: flex;
+    align-items: center;
+    color: black;
+    font-size: 55px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.menu h1 span{
+    
+    color: #fac301;
+    font-family:mv boli;
+    margin-left: 15px;
+}
+.menu h1 span::after{
+    content: '';
+    width:100%;
+    height: 3px;
+    background: #fac301;
+    display: block;
+    position: relative;
+    bottom: 15px;
+    
+}
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+}
+.menu .menu_box .menu_card{
+    width:325px ;
+    height:430px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+}
+.menu .menu_box .menu_card .menu_img{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.4s;
+}
+.menu .menu_box .menu_card .menu_img img:hover{
+ transform: scale(1.2);
+}
+.menu .menu_box .menu_card .small_cart{
+   
+    float: right;
+    position: relative;
+    top: -220px;
+    right: 10px;
+    color: white;
+    border-radius: 7px;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card:hover .small_cart{
+    right: 35px;
+    top: -220px;
+    position: relative;
+    opacity: 1;
+}
+.menu .menu_box .menu_card .info h2{
+    text-align: center;
+    color: #fac301;
+    margin-top: 10px;
+    position: relative;
+    
+}
+.menu .menu_box .menu_card .info h3{
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+}
+.menu .menu_box .menu_card .info .rating {
+  
+    text-align: center;
+   color: #fac301;
+   margin-top: 10px;
+}
+.menu .menu_box .menu_card .info .ordbut{
+   background-color: #fac301;
+    position: relative;
+    left: 100px;
+    bottom: -30px;
+    cursor:pointer;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .info  a{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    
+}
+.menu .menu_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
