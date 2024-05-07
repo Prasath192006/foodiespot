@@ -21,17 +21,13 @@
                     <li><a href="#Menu">Menu</a></li>
                     <li><a href="#Gallery">Gallery</a></li>
                     <li><a href="#Review">Review</a></li> 
-                   <li><a href="login.html">Order</a></li>
+                   <li><a href="#order">Order</a></li>
                 </ul>
                 <div class="icon">
                     
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="login.html"> <i class="fa-solid fa-user"></i></a>
-                    <i class="fa-solid fa-bars"></i>
-                    
-                   
+                    <i class="fa-solid fa-user"></i>
                 </div>
             </nav>
             
@@ -66,7 +62,7 @@
                         <img src="food/briyani 1.jpg">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>Ambur Briyani</h2>
@@ -78,7 +74,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div>
                 <div class="menu_card">
@@ -86,7 +82,7 @@
                         <img src="food/hydrabad biriyani.avif">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>Hydrabad Briyani</h2>
@@ -98,33 +94,15 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
                     </div>
-                </div><div class="menu_card">
-                    <div class="menu_img">
-                        <img src="food/amsavalli biriyani.jpg">
-                    </div>
-                    <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <div class="info">
-                        <h2>Amsavalli Briyani</h2>
-                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>250.00</h3>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>          
-                        <a href="#" class="ordbut">Order Now</a>
-                    </div>
-                </div><div class="menu_card">
+                </div>
+                <div class="menu_card">
                     <div class="menu_img">
                         <img src="food/thalapakatti.avif">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>Thalappakatti Briyani</h2>
@@ -136,14 +114,14 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div><div class="menu_card">
                     <div class="menu_img">
                         <img src="food/Nattu-kozli-biryani.jpg">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>Nattu-Kozli Briyani</h2>
@@ -155,18 +133,18 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div><div class="menu_card">
                     <div class="menu_img">
-                        <img src="food/liver briy.avif">
+                        <img src="food/egg rice.jpg">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
-                        <h2>Liver Fry</h2>
-                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>200.00</h3>
+                        <h2>Egg Rice</h2>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>100.00</h3>
                         <div class="rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -174,14 +152,33 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
+                    </div>   
+                </div><div class="menu_card">
+                    <div class="menu_img">
+                        <img src="food/liver briy.avif">
+                    </div>
+                    <div class="small_cart">
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                    <div class="info">
+                        <h2>Liver Fry</h2>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>130.00</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>          
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div><div class="menu_card">
                     <div class="menu_img">
                         <img src="food/naan.webp">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>Naan</h2>
@@ -193,14 +190,14 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star-half-stroke"></i>
                         </div>          
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div><div class="menu_card">
                     <div class="menu_img">
                         <img src="food/pallipalayam.webp">
                     </div>
                     <div class="small_cart">
-                        <i class="fa-solid fa-heart"></i>
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
                     </div>
                     <div class="info">
                         <h2>
@@ -215,15 +212,72 @@
                         </div>  
                         
                               
-                        <a href="#" class="ordbut">Order Now</a>
+                        <a  class="ordbut">Order Now</a>
+                    </div>
+                </div><div class="menu_card">
+                    <div class="menu_img">
+                        <img src="food/mushroom gravy.webp">
+                    </div>
+                    <div class="small_cart">
+                        <a  onclick="cart()"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                    <div class="info">
+                        <h2>Mushroom Gravy</h2>
+                        <h3><i class="fa-solid fa-indian-rupee-sign"></i>110.00</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>          
+                        <a  class="ordbut">Order Now</a>
                     </div>
                 </div>
-                
             </div>
             
         </div>
+        <footer>
+        <div class="footer_main">
+            <div class="footer_con">
+                <h2>Location</h2>
+                <p>Chennai</p>
+                <p>Salem</p>
+                <p>Coimbatore</p>
+                <p>Madurai</p>
+            </div>
+            <div class="footer_con">
+                <h2>Quick Link</h2>
+               <a href="#Home"> <p>Home</p></a>
+               <a href="#Menu"><p>Menu</p></a>
+                <p>Gallery</p>
+                <p>Contact</p>
+            </div>
+            <div class="footer_con">
+                <h2>Contact</h2>
+                <p>+91 7010480207</p>
+                <p>+91 9458723581</p>
+                <p>briyanispot17@gmail.com</p>
+              
+            </div>
+            <div class="footer_con">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>24/7 Service</p>
+                <p>Easy Payment</p>
+            
+            </div>
+            <div class="footer_con">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-threads"></i>
+            </div>
+        </div>
+            <pre class="design"> </i> Designed by  <i class="fa-solid fa-laptop-code"></i> Prasath</pre>
+    </footer>
     </body>
-
 </html>
 
     
